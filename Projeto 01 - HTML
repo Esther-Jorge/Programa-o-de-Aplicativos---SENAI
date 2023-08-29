@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Minha Angela Falante !</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur, libero blanditiis beatae incidunt eaque non dolor debitis aperiam animi a expedita quibusdam laudantium delectus corrupti consequatur maxime, numquam earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate, numquam non necessitatibus amet, veniam hic at voluptates laudantium mollitia officiis quibusdam aspernatur quas! Ducimus quos molestiae tempore architecto quis?</p>
+    <hr>
+    <img src="images/12611324.png">
+    <img src="images/download.jpg">
+    <hr>
+    <video src="arquivos/Minha Talking Angela 2 (NOVO Trailer).mp4" controls autoplay muted>
+    </video>
+    <hr>
+    <marquee scrollamount="17" behavior="alternate">Minha Angela Falante está disponivel gratuitamente na PlayStore!!</marquee>
+
+
+</body>
+</html>
