@@ -1,1 +1,40 @@
+//Dom: informar quais objetos html sera trabalhado
 
+const imagem = document.querySelector('#imagem')
+const jogador = document.querySelector('#nome')
+const btha = document.querySelector('#btha')
+const btcr7 = document.querySelector('#btcr7')
+const btdy = document.querySelector('#btdy')
+const btmb = document.querySelector('#btmb')
+const btme = document.querySelector('#btme')
+const btne = document.querySelector('#btne')
+
+//Eventos: determinar o que funciona para integir com o cliente
+
+btha.addEventListener('click',halland)
+btcr7.addEventListener('click',cr7)
+btdy.addEventListener('click',dybala)
+btmb.addEventListener('click',mbappe)
+btme.addEventListener('click',messi)
+btne.addEventListener('click',neymar)
+
+//Funções: 
+
+function halland(){
+    imagem.src = "imagens/haaland.png"
+}
+function cr7(){
+    imagem.src = "imagens/cr7.jpg"
+}
+function dybala(){
+    imagem.src = "imagens/dybala.jpg"
+}
+function mbappe(){
+    imagem.src = "imagens/mbappe.jpg"
+}
+function messi(){
+    imagem.src = "imagens/messi.jpg"
+}
+function neymar(){
+    imagem.src = "imagens/neymar.jpg"
+}
