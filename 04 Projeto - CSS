@@ -1,1 +1,53 @@
+body {
+    background: url('https://w.forfun.com/fetch/63/63a0d2c7ee86a944abfd59783b0c8ce6.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
+
+}
+.central{
+    background: rgb(0, 0, 0);
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 200px;
+}
+
+.central div{
+    background: rgba(255, 240, 240, 0.726);
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    
+}
+#horas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+#minutos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+#segundos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+.central .pontos{
+    font-size: 90px;
+    color: white;
+}
