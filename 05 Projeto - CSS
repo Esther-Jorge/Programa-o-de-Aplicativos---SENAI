@@ -1,1 +1,32 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    color: black;
+    font-weight: 620;
+    font size: larger;
+    margin: 20px;
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+
+.claro{
+    background: linear-gradient(cyan,grey
+    );
+}
+
+.escuro{
+    background: linear-gradient(darkblue, black);
+}
+
+
+
+
 
