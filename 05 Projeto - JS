@@ -1,1 +1,23 @@
+//DOM
 
+const btclaro = document.querySelector('#claro')
+const btescuro = document.querySelector('#escuro')
+const fundo = document.querySelector('body')
+
+//Eventos
+
+btclaro.addEventListener('click', claro)
+btescuro.addEventListener('click', escuro)
+
+//Função
+
+function claro(){
+    fundo.classList.add('claro')
+    fundo.classList.remove('escuro')
+}
+
+
+function escuro(){
+    fundo.classList.add('escuro')
+    fundo.classList.remove('claro')
+}
