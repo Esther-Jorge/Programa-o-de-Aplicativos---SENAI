@@ -1,1 +1,29 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    
+    <div class="central">
+
+        <video src="video/mario.mp4"></video>
+        
+        <div class="botoes">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+            <button id="acelerar">+ rapido</button>
+            <button id="desacelerar">+ lento</button>
+        </div>
+
+    </div>
+
+    <script src="js/video.js"></script>
+</body>
+</html>
