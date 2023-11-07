@@ -1,1 +1,38 @@
 
+//dom
+
+const video = document.querySelector('video')
+const btPlay = document.querySelector('#play')
+const btPause = document.querySelector('#pause')
+const btStop = document.querySelector('#stop')
+const acelerar = document.querySelector('#acelerar')
+const desacelerar = document.querySelector('#desacelerar')
+
+
+// eventos
+
+btPlay.addEventListener('click',()=>{
+    video.play()
+    video.playbackRate = 1
+})
+
+btPause.addEventListener('click',()=>{
+    video.pause()
+})
+
+btStop.addEventListener('click',()=>{
+    video.pause()
+    video.currentTime = 0
+})
+
+acelerar.addEventListener('click',()=>{
+    video.playbackRate += 0.25
+})
+
+desacelerar.addEventListener('click',()=>{
+    video.playbackRate -= 0.25
+})
+
+video.addEventListener('click',()=>{
+    video.requestFullscreen()
+})
