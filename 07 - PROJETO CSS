@@ -1,1 +1,36 @@
 
+body{
+    background: url('/images/mario.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central{
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.central video{
+    width: 500px;
+}
+
+.central button{
+    background: darkcyan;
+    padding: 7px 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+    transition: 0.6;
+
+}
+
+.central button:active{
+    background: red;
+    color: white;
+}
