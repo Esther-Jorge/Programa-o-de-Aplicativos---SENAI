@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.amarelo{
+    background: orange;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+.amarelo .carro{
+    width: 200px;
+    top: 220px;
+    position: absolute;
+    animation: movimento 5s;
+}
+
+
+@keyframes movimento {
+    0%{
+        left: 600px;
+     }
+     100%{
+        left: -150px;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  A referencia da div vermelho deixa de ser o amarelo e passa a ser o body, agora portanto o pai da div vermelho é o body */
+
+/*  Depois de incluir o position: absolute, colocar o position relative para que todos os filhos (div) incluindo o vermelho esteja  referenciando o pai*/
+
+/*Consegue fazer a animação com o posicionamento relativo e absoluto   */
+
