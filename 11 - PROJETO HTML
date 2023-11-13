@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="botoes">
+
+        <button id="claro">
+            <img src="images/sun.svg">
+        </button>
+
+        <button id="escuro">
+            <img src="images/moon.svg">
+        </button>
+    </div>
+    
+</body>
+</html>
