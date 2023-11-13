@@ -1,0 +1,32 @@
+
+body{
+    height: 100vh;
+}
+
+.botoes{
+    width: fit-content;
+}
+
+.botoes img{
+    width: 30px;
+}
+
+.botoes button{
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+.botoes button:hover{
+    transform: scale(1.1);
+}
+
+.dark{
+    background: linear-gradient(darkblue, black);
+}
+
+.claro{
+    background: linear-gradient(cyan, orange);
+}
