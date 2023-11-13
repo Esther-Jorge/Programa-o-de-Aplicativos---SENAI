@@ -1,0 +1,47 @@
+//DOM
+
+const fundo = document.querySelector('body')
+const bt1 = document.querySelector('#claro')
+const bt2 = document.querySelector('#escuro')
+
+//EVENTO
+
+bt1.addEventListener('click',()=>{
+
+fundo.classList.add('claro')
+fundo.classList.remove('dark')
+
+})
+
+bt2.addEventListener('click',()=>{
+
+fundo.classList.add('dark')
+fundo.classList.remove('claro')
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
