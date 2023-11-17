@@ -1,1 +1,28 @@
+//DOM
+
+const nomeCidade = document.querySelector('.input-cidade')
+const botao = document.querySelector('.botao-busca')
+const textoCidade = document.querySelector('.cidade')
+const temperatura = document.querySelector('.temp')
+const previsao = document.querySelector('.texto-previsao')
+const chave = '37188ccecadcab8d4260b31a88873b0a'
+
+//EVENTO
+
+botao.addEventListener('click',buscarCidade)
+
+
+//FUNCAO
+async function buscarCidade(){
+
+    let cidade = nomeCidade.value
+    
+    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chave}&units=metric&lang=pt_br`)
+    .then(resposta=>resposta.json())
+
+    textoCidade.textContent = dados.name
+    temperatura.textContent = (dados.main.temp).toFixed(0)+"°C"
+    previsao.textContent = dados.weather[0].description
+   // ler todo o arquivo json todo. Nao precisar ficar no codigo     console.log(dados)
+}
 
