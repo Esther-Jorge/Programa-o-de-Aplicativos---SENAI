@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="css/estilos.css.css">
+</head>
+<body>
+    
+    <div class="caixa-maior">
 
+        <input type="text" class="input-cidade">
+        <button class="botao-busca">Procurar</button>
+
+        <div class="caixa-media">
+            <h2 class="cidade">xxxxxxx</h2>
+            <p class="temp">xxxxxx°C</p>
+            <p class="texto-previsao">XXXXXXX</p>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
