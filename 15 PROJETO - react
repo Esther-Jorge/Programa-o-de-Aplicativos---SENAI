@@ -1,0 +1,47 @@
+import React from "react";
+import {Image, View, Text, StyleSheet} from 'react-native';
+
+export default function App(){
+
+    return(
+      <View style={rep.fundo}>
+        <View style={rep.caixaGrande}>
+          <Image 
+          style={rep.imagem}
+          source={require('./imagens/senai.png')} />
+          <Text style={rep.texto1}>Técnico de Sistemas | Senai</Text>
+          <Text>2024</Text>
+        </View>
+      </View>
+    );
+}
+
+const rep = StyleSheet.create({
+
+  fundo:{
+    flex:1, 
+    backgroundColor: 'darkcyan',
+    justifyContent:'center',
+    alignItems: 'center'
+  },
+
+  caixaGrande:{
+    width: 300,
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 20,
+  },
+
+  imagem:{
+    width: 230,
+    height: 250,
+    resizeMode:'contain',
+  },
+
+  texto1: {
+    fontSize:20,
+    color: 'orange',
+    fontWeight:'bold',
+  }
+
+})
