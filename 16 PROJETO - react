@@ -1,0 +1,86 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { TextInput, Button } from 'react-native';
+import { useState } from 'react';
+
+export default function App(){
+
+  const [moeda,setMoeda]=useState('')
+
+  function real(){
+    let valorFinal = moeda*4.96
+    alert('O valor em Real é: '+'R$'+valorFinal)
+
+  }
+
+  return(
+    <View style={estilos.conteudo}>
+      <View style={estilos.caixinha}>
+        <Image
+          style={estilos.foto} 
+          source={require('./imagens/senai.png')}
+        />
+        <Text style={estilos.texto}>Técnico de Sistemas | Senai</Text>
+        <Text style={estilos.texto3}>Valor em Dolar - U$</Text>
+        <TextInput 
+        style={estilos.inputDolar}
+        keyboardType='numeric'
+        value={moeda}
+        onChangeText={setMoeda}
+        />
+        <Button title='Calcular valor em R$' onPress={real}  
+        />
+
+      </View>
+    </View>
+  )
+}
+
+const estilos = StyleSheet.create({
+
+  conteudo:{
+    flex:1,
+    backgroundColor:'blue',
+    justifyContent:'center',
+    alignItems:'center',
+  },
+
+  caixinha:{
+    backgroundColor:'white',
+    width: 300,
+    padding: 20,
+    borderRadius: 20,
+    gap:8,
+  },
+
+  texto:{
+    fontSize: 20,
+    color: 'green',
+    fontWeight:'bold',
+    marginTop: 20,
+  },
+
+  texto3:{
+    fontSize: 18,
+    fontWeight:'bold',
+    color:'darkblue',
+  },
+
+  foto:{
+    width: 200,
+    height: 150,
+    resizeMode: 'contain',
+    
+  },
+
+  inputDolar:{
+    borderWidth:1,
+    borderColor:'darkblue',
+    height: 30,
+    paddingHorizontal: 20,
+    borderRadius:10,
+
+  },
+
+
+})
